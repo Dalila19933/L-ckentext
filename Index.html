@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Lückentext</title>
+<style>
+body {
+    font-family: Arial, sans-serif;
+    max-width: 700px;
+    margin: 30px auto;
+}
+input {
+    width: 120px;
+    margin: 0 5px;
+}
+button {
+    margin: 10px 5px;
+    padding: 8px 15px;
+}
+#loesungen {
+    display: none;
+    margin-top: 20px;
+    background: #f0f0f0;
+    padding: 10px;
+}
+</style>
+</head>
+<body>
+
+<h2>DMS & Digitale Archivierung LF2 / Group B </h2>
+
+
+<p>
+1-Ein DMS speichert Dokumente  <input type="text" id="a1"> (Digital/Handschriftlich).
+</p>
+
+<p>
+2- Die GoBD regeln dogotale <input type="text" id="a2> (Dokumente/ Möbel).
+</p>
+
+<p>
+3- Dogotale Dokumente haben geliche  <input type="text" id="a3> ( Aufbewahrungsfristen/Farben).
+</p>
+
+<p>
+4- Regelmäßiger Backup schützen vor <input type="text" id="a4>  (Datenverlust/Druckern).
+</p>
+
+<p>
+5- Das Generationenprinzip nutzt mehrere <input type="text" id="a5> (Sicherungen/ Tastaturen)
+</p>
+
+<p>
+6-Eine analoge Registratur verwendet <input type="text" id="a6> (Papierakten/Datenbanken)
+</p>
+
+<p>
+7- Das Finanzamt  <input type="text" id="a7> (darf/darf nicht) auf Daten zugreifen
+</p>
+
+
+<button onclick="zeigeLoesungen()">Lösungen anzeigen</button>
+<button onclick="zuruecksetzen()">Wiederholen</button>
+
+<div id="loesungen">
+    <h3>Lösungen</h3>
+    <ul>
+        <li> Digital</li>
+        <li> Dokumente</li>
+        <li> Aufbewahrungsfristen</li>
+	<li> Datenverlust</li>
+	<li> Sicherungen</li>
+	<li> Papierakten</li>
+	<li> Darf</li>
+    </ul>
+</div>
+
+<script>
+function zeigeLoesungen() {
+    document.getElementById("loesungen").style.display = "block";
+}
+
+function zuruecksetzen() {
+    document.getElementById("a1").value = "";
+    document.getElementById("a2").value = "";
+    document.getElementById("a3").value = "";
+    document.getElementById("a4").value = "";
+    document.getElementById("a5").value = "";
+    document.getElementById("a6").value = "";
+    document.getElementById("a7").value = "";
+
+
+
+    document.getElementById("loesungen").style.display = "none";
+}
+</script>
+
+</body>
+</html>
